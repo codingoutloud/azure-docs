@@ -35,7 +35,7 @@ The deployment script resource is only available in the regions where Azure Cont
 
 ## Prerequisites
 
-- **A user-assigned managed identity with the contributor's role to the target resource-group**. This identity is used to execute deployment scripts. To perform operations outside of the resource group, you need to grant additional permissions. For example, assign the identity to the subscription level if you want to create a new resource group.
+- **A user-assigned managed identity with Contributor role to the target resource group**. This identity is used to execute deployment scripts. To perform operations outside of the resource group, you need to grant additional permissions. For example, assign the identity to the subscription level if you want to create a new resource group.
 
   > [!NOTE]
   > The script service creates a storage account (unless you specify an existing storage account) and a container instance in the background .  A user-assigned managed identity with the contributor's role at the subscription level is required if the subscription has not registered the Azure storage account (Microsoft.Storage) and Azure container instance (Microsoft.ContainerInstance) resource providers.
